@@ -6,11 +6,20 @@ class User extends Password {
   String? name;
   int? age;
   double? height;
-  String? user_password;
+  String? _userPassword;
 
   User({this.id, this.name, this.age, this.height, String? user_password})
       : super(password: user_password) {
-    this.user_password = user_password;
+    this._userPassword = user_password;
+  }
+
+  // Getter for user_password
+  String? get user_password => _userPassword;
+
+  // Setter for user_password that updates the password in Password class
+  set user_password(String? newPassword) {
+    _userPassword = newPassword;
+    this.password = newPassword; // Update password in the Password class
   }
 
   // Convert User to JSON
