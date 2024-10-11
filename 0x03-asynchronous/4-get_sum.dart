@@ -26,7 +26,7 @@ Future<double> calculateTotal() async {
     // Return the total price
     return totalPrice;
   } catch (e) {
-    // In case of any error, return -1
+    // In case of any error, return -1 as an integer
     return -1;
   }
 }
