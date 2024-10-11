@@ -1,6 +1,6 @@
 # 0x02-dart-classes
 
-This directory contains Dart projects for the "Classes" chapter of the Holberton School curriculum.
+This directory contains Dart projects for the "Classes" chapter of the Atlas School curriculum.
 
 ## Projects
 
